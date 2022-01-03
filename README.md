@@ -1,4 +1,4 @@
-# flutter_demo
+# dart_demo
 
 My learning history on Dart Programming Language
 
