@@ -18,7 +18,5 @@ void main(List<String> args) {
       rectangle.calculateCircumference().toString());
 
   print("\n");
-
-  print("\n");
   //=============================================================================================================================
 }
