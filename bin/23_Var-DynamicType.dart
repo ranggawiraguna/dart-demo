@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, prefer_typing_uninitialized_variables
 
 void main(List<String> args) {
   dynamic data1; // Tipedata yang dapat dimasukkan nilai dengan tipe apapun
