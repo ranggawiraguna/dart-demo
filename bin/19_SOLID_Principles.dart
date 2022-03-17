@@ -10,7 +10,7 @@ void main(List<String> args) {
 
   print("Single Responsibility Principle : ");
   print(
-      "Setiap satu objek sebaiknya dibuat 2 class, agar fungsional yang dikerjakan lebih khusus di satu objek tertentu");
+      "Setiap satu objek sebaiknya dibuat class tersendiri, agar fungsional yang dikerjakan lebih khusus di satu objek tertentu");
 
   print("\n");
 
@@ -68,14 +68,14 @@ class Radio {
 // Dalam artian lain class yang ingin dirubah tidak boleh di modifikasi seperti menambahkan variable ataupun method
 // Hal ini dapat membuat versi lama dari code yang dibuat tidak mengalami error
 class Robot {
-  // Dalam kasus ini robot diupgrade tidak bisa berjalan, tetapi memiliki kemampuan terbang
+  // Dalam kasus ini robot diupgrade memiliki kemampuan terbang
   // Juga terdapat kemampuan tambahan untuk membunuh monster kecoa
   void talk() {}
   void walk() {}
 }
 
 class SuperRobot extends Robot {
-  // Semua perilaku Robot akan diambil oleh SuperRObot
+  // Semua perilaku Robot akan diambil oleh SuperRobot
   // Class ini melakukan upgrade robot sebelumnya, tanpa menghapus variable ataupun method yang ada pada robor versi lama
   void killCrocoach() {}
   void fly() {}
@@ -156,7 +156,7 @@ class BlackMage extends Hero implements IMagisCaster {
 // ==============================================================================================================================================================================================
 // Depedency Inversion Principle
 // Membuat struktur yang memungkinkan untuk mengurangi kesalahan pada saat terjadi perubahan kode
-// Contoh : Dalam hal ini ada kasus dimana program memiliki fungsional yang pasti ada yaitu save user to storage, akan tetapi stoage yang dimaksud bisa saja berubah
+// Contoh : Dalam hal ini ada kasus dimana program memiliki fungsional yang pasti ada yaitu save user to storage, akan tetapi storage yang dimaksud bisa saja berubah
 //          saat ini storage yang digunakan yaitu firebase, akan tetapi dilain waktu bisa saja kita merubah storage menjadi localstorage
 //          perubahan ini bisa saja terjadi, tetapi satu hal yang pasti fungsional untuk menyimpan data user tidak akan berubah
 class Example {

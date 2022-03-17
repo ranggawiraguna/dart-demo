@@ -8,8 +8,8 @@ void main(List<String> args) {
 
   // Definition function with underscore (parameter not stored at memory)
   sayWelcome((_) {
-    print("Hello, Welcome Back ");
-  });
+    print("Hello, Welcome Back " + _);
+  }, "Rangga");
 }
 
 // Initialize function with required parameter name

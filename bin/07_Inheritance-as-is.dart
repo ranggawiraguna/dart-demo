@@ -68,7 +68,7 @@ void main(List<String> args) {
   print("Monster as MonsterCockroach : " + monsterCockroach.fly());
 
   // Wrong use of as keyword
-  // MonsterUburUbur monsterUburUbur = monsters[0] as MonsterCockroach;
+  // MonsterUburUbur monsterUburUbur = monsters[0] as MonsterUburUbur;
 
   print("\n");
   //=============================================================================================================================
