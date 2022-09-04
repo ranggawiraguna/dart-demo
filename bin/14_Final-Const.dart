@@ -20,10 +20,9 @@ void main(List<String> args) {
   print("\n");
 
   // Const : Value as reference
-  var firstPersonConst =
-      const PersonConst(id: "00000001", name: "Rangga Wiraguna");
-  var secondPersonConst =
-      const PersonConst(id: "00000001", name: "Rangga Wiraguna");
+  const firstPersonConst = PersonConst(id: "00000001", name: "Rangga Wiraguna");
+  const secondPersonConst =
+      PersonConst(id: "00000001", name: "Rangga Wiraguna");
 
   print(firstPersonConst == secondPersonConst
       ? "firstPersonConst sama dengan secondPersonConst"

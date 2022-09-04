@@ -3,8 +3,14 @@
 import 'dart:io';
 
 void main(List<String> args) {
+  stdout.write("Masukkan Karakter : ");
   String? inputTeks = stdin.readLineSync();
-  print(inputTeks ?? "Kosong");
+  print("Karakter yang dimasukkan : " + (inputTeks ?? "Salah"));
+
+  print("");
+
+  stdout.write("Masukkan Angka : ");
   int? inputAngka = int.tryParse(stdin.readLineSync() ?? "");
-  print(inputAngka ?? "Kosong");
+  print("Angka yang dimasukkan : " +
+      (inputAngka == null ? "Salah" : inputAngka.toString()));
 }

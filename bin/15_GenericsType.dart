@@ -1,5 +1,7 @@
 // ignore_for_file: file_names
 
+import 'package:dart_demo/SecureBox.dart';
+
 void main(List<String> args) {
   print("");
 
@@ -39,18 +41,6 @@ void main(List<String> args) {
   }
 
   print("\n");
-}
-
-// Example class with generic type
-// Class yang membutuhkan suatu tipe data yang akan digunakan sebagai tipe data pada attribute didalamnya
-// Disini membuat suatu data yang memiliki pin untuk mengaksesnya, dengan tipedata bebas sesuai yang di inisialisasikan
-class SecureBox<T> {
-  final String pin;
-  final T data;
-
-  SecureBox({required this.pin, required this.data});
-
-  T? getData(String pinInput) => (pinInput == pin) ? data : null;
 }
 
 // Example class

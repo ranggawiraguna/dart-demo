@@ -24,10 +24,9 @@ class User {
 // Artinya jika objek ini dibuat lebih dari satu, maka object-object tersebut hanya mengambil satu reference saja
 // Dalam kasus ini berguna untuk mengurangi penggunaan memory, karena service ini hanya menggunakan satu reference walaupun di inisialisasi oleh banyak kode / halaman
 class AccountServices {
-  static final AccountServices _instance = AccountServices._internal();
-
   AccountServices._internal();
 
+  static final AccountServices _instance = AccountServices._internal();
   factory AccountServices() => _instance;
 
   Future<User> getUserData() async {

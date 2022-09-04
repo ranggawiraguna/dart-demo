@@ -10,7 +10,7 @@ void main(List<String> args) {
   //=============================================================================================================================
   // Abstract & Interface
   // Abstract  : template yang bisa digunakan sebagai parent dari class lain (Setiap class hanya dapat extends 1 abstract class)
-  // Interface : sama halnya dengan abstract, akan tetapi dia hanya berupa template kosong, dan class yang mmengimpelementasikannya harus meng-override semua attribut yang ada pada interface (Setiap clas dapat implements banyak interface)
+  // Interface : sama halnya dengan abstract, akan tetapi dia hanya berupa template kosong, dan class yang mengimpelementasikannya harus meng-override semua attribut yang ada pada interface (Setiap clas dapat implements banyak interface)
 
   List<Monster> monsters = [];
 

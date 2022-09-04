@@ -1,5 +1,7 @@
 // ignore_for_file: file_names
 
+// Run with enable-asserts flags
+// dart --enable-asserts filename.dart
 void main(List<String> args) {
   late Person person;
   try {
